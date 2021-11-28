@@ -1,0 +1,128 @@
+html, body {
+  height: 100%;
+  background-color: #0C1E42;
+  font-family: "Lato", sans-serif;
+  color: #7DAE41;
+  font-size: 36px;
+}
+
+main {
+  margin-top: 160px;
+  padding-bottom: 0.5em;
+}
+
+h1 {
+  text-align: center;
+  font-size: 36px;
+}
+
+h1 > span {
+  color: #D11224;
+}
+
+main > div {
+  width: 470px;
+  margin: auto;
+  margin-bottom: 0.5em;
+}
+
+section {
+  width: 300px;
+  margin: auto;
+}
+
+button {
+  display: inline-block;
+  width: 300px;
+  height: 48px;
+  margin-top: 2em;
+  background: #7DAE41;
+  color: #0C1E42;
+  font-size: 22px;
+  border: none;
+  cursor: pointer;
+}
+button:hover {
+  background: #96c35f;
+}
+button:active {
+  background: #D11224;
+}
+
+p {
+  text-align: center;
+  margin-bottom: 0;
+}
+
+section {
+  position: relative;
+}
+
+img {
+  display: none;
+  position: absolute;
+  left: 305px;
+  top: 48px;
+  height: 48px;
+  width: 48px;
+  -webkit-animation: spin 1s linear infinite;
+  animation: spin 1s linear infinite;
+}
+
+img:first-of-type {
+  left: -54px;
+}
+
+@keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+label {
+  vertical-align: middle;
+  color: #D11224;
+}
+
+input {
+  font-size: 22px;
+  height: 36px;
+  width: 300px;
+  margin-left: 1em;
+}
+
+.christmas {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  margin-top: -150px;
+  margin-left: -150px;
+  width: 300px;
+  height: 300px;
+  position: relative;
+  border-radius: 50%;
+  background-color: #0C1E42;
+  background-image: radial-gradient(circle at 50% 18%, yellow 3%, transparent 3.5%), linear-gradient(60deg, #7dae41 8%, transparent 8.5%), linear-gradient(-60deg, #79a83f 8%, transparent 8.5%), linear-gradient(60deg, #75a33d 10%, transparent 10.5%), linear-gradient(-60deg, #719d3b 10%, transparent 10.5%), linear-gradient(60deg, #6d9839 12%, transparent 12.5%), linear-gradient(-60deg, #699237 12%, transparent 12.5%), linear-gradient(80deg, #855726 5%, transparent 5.5%), linear-gradient(-80deg, #7f5324 5%, transparent 5.5%);
+  background-position: 0 0, 150px 120px, 150px 120px, 150px 166.6666666667px, 150px 166.6666666667px, 150px 214.2857142857px, 150px 214.2857142857px, 150px 240px, 150px 240px;
+}
+.christmas:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  transform: rotate(-15deg);
+  background-image: radial-gradient(circle at 30% 30%, #fff 1.5%, transparent 2.5%), radial-gradient(circle at 80% 70%, #fff 1.5%, transparent 2.5%), radial-gradient(circle at 30% 50%, #fff 1%, transparent 2%), radial-gradient(circle at 70% 85%, #fff 1%, transparent 2%);
+  background-size: 100% 100%, 100% 100%, 50% 100%, 50% 50%;
+  background-position: 0 0, 0 0, 0 0, 0 0;
+  animation: snow 6s linear infinite forwards;
+}
+@keyframes snow {
+  100% {
+    background-position: 0px 300px, 0 300px, 0px 300px, 0px 300px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
