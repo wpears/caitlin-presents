@@ -10,7 +10,13 @@ html,body {
 	background-color: $bg;
   font-family: 'Lato', sans-serif;
   color: $leaf-color;
+}
+
+body,h1 {
   font-size: 36px;
+  @media (max-width: 600px) {
+    font-size: 28px;
+  }
 }
 
 main {
@@ -20,7 +26,6 @@ main {
 
 h1 {
   text-align: center;
-  font-size: 36px;
 }
 
 h1 > span {
@@ -36,16 +41,21 @@ main > div {
   }
 }
 
-section {
+section, button {
   width: 300px;
+  @media (max-width: 600px) {
+    width: 240px;
+  }
+}
+
+section {
   margin: auto;
+  margin-top: 1em;
 }
 
 button {
   display: inline-block;
-  width: 300px;
   height: 48px;
-    margin-top: 2em;
   background: $leaf-color;
   color: $bg;
   font-size: 22px;
@@ -72,11 +82,15 @@ img {
   display: none;
   position: absolute;
   left: 305px;
-  top: 48px;
+  top: 5px;
   height: 48px;
   width: 48px;
   -webkit-animation:spin 1s linear infinite;
   animation:spin 1s linear infinite;
+
+  @media (max-width: 600px) {
+    left: 245px;
+  }
 }
 
 img:first-of-type{

@@ -3,7 +3,15 @@ html, body {
   background-color: #0C1E42;
   font-family: "Lato", sans-serif;
   color: #7DAE41;
+}
+
+body, h1 {
   font-size: 36px;
+}
+@media (max-width: 600px) {
+  body, h1 {
+    font-size: 28px;
+  }
 }
 
 main {
@@ -13,7 +21,6 @@ main {
 
 h1 {
   text-align: center;
-  font-size: 36px;
 }
 
 h1 > span {
@@ -31,16 +38,23 @@ main > div {
   }
 }
 
-section {
+section, button {
   width: 300px;
+}
+@media (max-width: 600px) {
+  section, button {
+    width: 240px;
+  }
+}
+
+section {
   margin: auto;
+  margin-top: 1em;
 }
 
 button {
   display: inline-block;
-  width: 300px;
   height: 48px;
-  margin-top: 2em;
   background: #7DAE41;
   color: #0C1E42;
   font-size: 22px;
@@ -67,11 +81,16 @@ img {
   display: none;
   position: absolute;
   left: 305px;
-  top: 48px;
+  top: 5px;
   height: 48px;
   width: 48px;
   -webkit-animation: spin 1s linear infinite;
   animation: spin 1s linear infinite;
+}
+@media (max-width: 600px) {
+  img {
+    left: 245px;
+  }
 }
 
 img:first-of-type {
