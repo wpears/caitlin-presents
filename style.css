@@ -8,7 +8,7 @@ html, body {
 
 main {
   margin-top: 160px;
-  padding-bottom: 0.5em;
+  padding-bottom: 1em;
 }
 
 h1 {
@@ -24,6 +24,11 @@ main > div {
   width: 470px;
   margin: auto;
   margin-bottom: 0.5em;
+}
+@media (max-width: 600px) {
+  main > div {
+    width: 300px;
+  }
 }
 
 section {
@@ -83,12 +88,23 @@ label {
   vertical-align: middle;
   color: #D11224;
 }
+@media (max-width: 600px) {
+  label {
+    font-size: 22px;
+  }
+}
 
 input {
   font-size: 22px;
   height: 36px;
   width: 300px;
   margin-left: 1em;
+}
+@media (max-width: 600px) {
+  input {
+    width: 200px;
+    margin-left: 0.5em;
+  }
 }
 
 .christmas {
