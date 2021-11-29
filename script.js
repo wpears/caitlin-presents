@@ -16,7 +16,7 @@ function hideImgs(){
 button.addEventListener('click', async function(e){
   e.preventDefault();
   showImgs();
-  const res = await fetch('https://caitlin.presents.workers.dev', {
+  const res = await fetch('https://caitlin.wyatt.workers.dev', {
     method: 'POST',
     body: JSON.stringify({
       first: first.value,
